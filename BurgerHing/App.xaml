@@ -1,0 +1,10 @@
+﻿<Application
+    x:Class="BurgerHing.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Application.Resources>
+        <FontFamily x:Key="Flame">pack://application:,,,/Fonts/Flame-Regular.ttf</FontFamily>
+        <FontFamily x:Key="FlameBold">pack://application:,,,/Fonts/Flame-Bold.ttf</FontFamily>
+        <FontFamily x:Key="FlameSans">pack://application:,,,/Fonts/FlameSans-Regular.ttf</FontFamily>
+    </Application.Resources>
+</Application>

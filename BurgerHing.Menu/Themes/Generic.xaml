@@ -1,0 +1,11 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/BurgerHing.Menu;component/Themes/Views/MenuView.xaml" />
+        <ResourceDictionary Source="/BurgerHing.Menu;component/Themes/Units/MenuCategoryButton.xaml" />
+        <ResourceDictionary Source="/BurgerHing.Menu;component/Themes/Units/MenuCategory.xaml" />
+        <ResourceDictionary Source="/BurgerHing.Menu;component/Themes/Units/MenuBoxItem.xaml" />
+        <ResourceDictionary Source="/BurgerHing.Menu;component/Themes/Units/MenuBox.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

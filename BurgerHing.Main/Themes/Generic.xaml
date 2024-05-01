@@ -1,0 +1,17 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/BurgerHing.Main;component/Themes/Units/PayStepLayout.xaml" />
+        <ResourceDictionary Source="/BurgerHing.Main;component/Themes/Units/PayStepOrderType.xaml" />
+        <ResourceDictionary Source="/BurgerHing.Main;component/Themes/Units/PayStepOrderResult.xaml" />
+        <ResourceDictionary Source="/BurgerHing.Main;component/Themes/Units/PayStepPayment.xaml" />
+        <ResourceDictionary Source="/BurgerHing.Main;component/Themes/Units/CartBox.xaml" />
+        <ResourceDictionary Source="/BurgerHing.Main;component/Themes/Units/CartBoxItem.xaml" />
+        <ResourceDictionary Source="/BurgerHing.Main;component/Themes/Units/MenuCategoryButton.xaml" />
+        <ResourceDictionary Source="/BurgerHing.Main;component/Themes/Units/MenuCategory.xaml" />
+        <ResourceDictionary Source="/BurgerHing.Main;component/Themes/Units/MenuBoxItem.xaml" />
+        <ResourceDictionary Source="/BurgerHing.Main;component/Themes/Units/MenuBox.xaml" />
+        <ResourceDictionary Source="/BurgerHing.Main;component/Themes/Views/MainWindow.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

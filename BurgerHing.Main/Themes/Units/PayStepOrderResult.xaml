@@ -1,0 +1,73 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ctrls="clr-namespace:BurgerHing.Main.Controls.Units"
+    xmlns:supctrls="clr-namespace:BurgerHing.Support.Controls.Units;assembly=BurgerHing.Support">
+    <Style TargetType="{x:Type ctrls:PayStepOrderResult}">
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ctrls:PayStepOrderResult}">
+                    <Grid
+                        Height="540"
+                        VerticalAlignment="Top">
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition Height="3*" />
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Top"
+                            FontSize="50"
+                            FontWeight="Bold"
+                            Text="Thank You for Your Order" />
+                        <Border
+                            Grid.Row="1"
+                            Width="460"
+                            Background="White"
+                            CornerRadius="25">
+                            <Grid VerticalAlignment="Center">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <TextBlock
+                                    HorizontalAlignment="Center"
+                                    FontSize="35"
+                                    Foreground="#d52200"
+                                    Text="Order Number" />
+                                <TextBlock
+                                    Grid.Row="1"
+                                    HorizontalAlignment="Center"
+                                    FontSize="150"
+                                    Foreground="#d52200"
+                                    Text="{Binding DisplayOrderNumber}" />
+                            </Grid>
+                        </Border>
+                        <TextBlock
+                            Grid.Row="2"
+                            Margin="0,20,0,0"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Top"
+                            Text="Don't Forget Your Credit Card and Get Your Receipt" />
+                        <supctrls:EmojiCircleButton
+                            Grid.Row="3"
+                            Width="35"
+                            Height="35"
+                            VerticalAlignment="Top"
+                            Background="#636363"
+                            Command="{Binding CloseAndResetCommand}"
+                            Content="✖️"
+                            CornerRadius="18"
+                            FontSize="15"
+                            MouseOverColor="#828282"
+                            PressedColor="#383838" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

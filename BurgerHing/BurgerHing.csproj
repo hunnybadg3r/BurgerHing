@@ -1,0 +1,72 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Beverages\hot-tea.png" />
+    <None Remove="Assets\Beverages\ice-milo.png" />
+    <None Remove="Assets\Beverages\soft-drink.png" />
+    <None Remove="Assets\Burger\bacon-cheese.png" />
+    <None Remove="Assets\Burger\double-double-bacon.png" />
+    <None Remove="Assets\Burger\double-onion-cheese.png" />
+    <None Remove="Assets\Burger\grilled-chicken.png" />
+    <None Remove="Assets\Burger\premium-bacon-cheese.png" />
+    <None Remove="Assets\Burger\wowpper.png" />
+    <None Remove="Assets\Dessert\apple-pie.png" />
+    <None Remove="Assets\Dessert\chocolate-sundae.png" />
+    <None Remove="Assets\Salads\salad.png" />
+    <None Remove="Assets\Sides\crispy-fried-chicken.png" />
+    <None Remove="Assets\Sides\french-fries.png" />
+    <None Remove="Assets\Sides\nuggets-6pcs.png" />
+    <None Remove="Assets\Sides\onion-ring-5pcs.png" />
+    <None Remove="Fonts\Flame-Bold.ttf" />
+    <None Remove="Fonts\Flame-Regular.ttf" />
+    <None Remove="Fonts\FlameSans-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BurgerHing.Main\BurgerHing.Main.csproj" />
+    <ProjectReference Include="..\BurgerHing.Support\BurgerHing.Support.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Beverages\hot-tea.png" />
+    <Resource Include="Assets\Beverages\ice-milo.png" />
+    <Resource Include="Assets\Beverages\soft-drink.png" />
+    <Resource Include="Assets\Burger\bacon-cheese.png" />
+    <Resource Include="Assets\Burger\double-double-bacon.png" />
+    <Resource Include="Assets\Burger\double-onion-cheese.png" />
+    <Resource Include="Assets\Burger\grilled-chicken.png" />
+    <Resource Include="Assets\Burger\premium-bacon-cheese.png" />
+    <Resource Include="Assets\Burger\wowpper.png" />
+    <Resource Include="Assets\Dessert\apple-pie.png" />
+    <Resource Include="Assets\Dessert\chocolate-sundae.png" />
+    <Resource Include="Assets\Salads\salad.png" />
+    <Resource Include="Assets\Sides\crispy-fried-chicken.png" />
+    <Resource Include="Assets\Sides\french-fries.png" />
+    <Resource Include="Assets\Sides\nuggets-6pcs.png" />
+    <Resource Include="Assets\Sides\onion-ring-5pcs.png" />
+    <Resource Include="Fonts\Flame-Bold.ttf" />
+    <Resource Include="Fonts\Flame-Regular.ttf" />
+    <Resource Include="Fonts\FlameSans-Regular.ttf" />
+  </ItemGroup>
+
+</Project>
