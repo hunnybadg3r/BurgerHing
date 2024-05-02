@@ -23,7 +23,7 @@
                             VerticalAlignment="Top"
                             FontSize="50"
                             FontWeight="Bold"
-                            Text="Thank You for Your Order" />
+                            Text="Thank You for Your Order!" />
                         <Border
                             Grid.Row="1"
                             Width="460"

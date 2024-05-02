@@ -4,6 +4,7 @@ using BurgerHing.Support.Local.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Serilog;
 using System.Windows;
 
 namespace BurgerHing;
@@ -19,6 +20,10 @@ public partial class App : Application
             .AddJsonFile("appsettings.json")
             .Build();
 
+        Log.Logger = new LoggerConfiguration()
+            .WriteTo.File("log-.txt", rollingInterval: RollingInterval.Day)
+            .CreateLogger();
+
         AppHost = Host.CreateDefaultBuilder()
             .ConfigureServices((hostContext, services) =>
             {
@@ -33,6 +38,14 @@ public partial class App : Application
 
                 // Services
                 services.AddSingleton<IMenuService, MenuService>();
+                services.AddSingleton<IDispatcherOrderService, DispatcherJsonFileOrderService>();
+
+                // Add Logger
+                services.AddSingleton(Log.Logger);
+                services.AddLogging(loggingBuilder =>
+                {
+                    loggingBuilder.AddSerilog(dispose: true);  
+                });
             })
             .Build();
     }

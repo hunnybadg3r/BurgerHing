@@ -41,7 +41,7 @@
                                                     Background="White"
                                                     BorderBrush="LightGray"
                                                     BorderThickness="0,0,0,1">
-                                                    <Grid Margin="5">
+                                                    <Grid Margin="6">
                                                         <Grid.ColumnDefinitions>
                                                             <ColumnDefinition Width="9*" />
                                                             <ColumnDefinition Width="1*" />
@@ -63,7 +63,9 @@
                                 </suppctrls:DarkScrollViewer>
                                 <Border
                                     Grid.Row="2"
-                                    BorderBrush="LightGray"
+                                    Width="380"
+                                    Margin="0,0,20,0"
+                                    BorderBrush="Red"
                                     BorderThickness="0,0,0,1">
                                     <Grid>
                                         <Grid.ColumnDefinitions>
@@ -71,12 +73,13 @@
                                             <ColumnDefinition Width="7*" />
                                         </Grid.ColumnDefinitions>
                                         <TextBlock
-                                            Margin="30,0"
+                                            Margin="30,0,0,0"
                                             VerticalAlignment="Center"
+                                            Foreground="Red"
                                             Text="Total" />
                                         <TextBlock
                                             Grid.Column="1"
-                                            Margin="30,0"
+                                            Margin="0,0,20,0"
                                             HorizontalAlignment="Right"
                                             VerticalAlignment="Center"
                                             FontSize="22"

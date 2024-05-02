@@ -2,11 +2,6 @@
 
 namespace BurgerHing.Support.Local.Services
 {
-    public interface IMenuService
-    {
-        List<MenuItemInfo> GetMenuItems(string category);
-    }
-
     public class MenuService : IMenuService
     {
         public List<MenuItemInfo> GetMenuItems(string category)
@@ -42,8 +37,8 @@ namespace BurgerHing.Support.Local.Services
         }
         private List<MenuItemInfo> GetSaladsMenu()
         {
-            return new List<MenuItemInfo>
-            {
+            return
+            [
                 new MenuItemInfo
                 {
                     Category = "Salads",
@@ -53,13 +48,13 @@ namespace BurgerHing.Support.Local.Services
                     ImagePath = "pack://application:,,,/Assets/Salads/salad.png",
                     Price = 6400
                 },
-            };
+            ];
         }
 
         private List<MenuItemInfo> GetChickenMenu()
         {
-             return new List<MenuItemInfo>
-            {
+             return
+            [
                 new MenuItemInfo
                 {
                     Category = "Chicken",
@@ -69,13 +64,13 @@ namespace BurgerHing.Support.Local.Services
                     ImagePath = "pack://application:,,,/Assets/Sides/crispy-fried-chicken.png",
                     Price = 3800
                 },
-            };
+            ];
         }
 
         private List<MenuItemInfo> GetBeveragesMenu()
         {
-            return new List<MenuItemInfo>
-            {
+            return
+            [
                 new MenuItemInfo
                 {
                     Category = "Beverages",
@@ -103,13 +98,13 @@ namespace BurgerHing.Support.Local.Services
                     ImagePath = "pack://application:,,,/Assets/Beverages/ice-milo.png",
                     Price = 3000
                 },
-            };
+            ];
         }
 
         private List<MenuItemInfo> GetDessertMenu()
         {
-            return new List<MenuItemInfo>
-            {
+            return
+            [
                 new MenuItemInfo
                 {
                     Category = "Dessert",
@@ -128,13 +123,13 @@ namespace BurgerHing.Support.Local.Services
                     ImagePath = "pack://application:,,,/Assets/Dessert/chocolate-sundae.png",
                     Price = 2400
                 },
-            };
+            ];
         }
 
         private List<MenuItemInfo> GetSidesMenu()
         {
-            return new List<MenuItemInfo>
-            {
+            return
+            [
                 new MenuItemInfo
                 {
                     Category = "Sides",
@@ -162,13 +157,13 @@ namespace BurgerHing.Support.Local.Services
                     ImagePath = "pack://application:,,,/Assets/Sides/onion-ring-5pcs.png",
                     Price = 2600
                 },
-            };
+            ];
         }
 
         private List<MenuItemInfo> GetMainMenu()
         {
-            return new List<MenuItemInfo>
-            {
+            return
+            [
                 new MenuItemInfo
                 {
                     Category = "Burger",
@@ -241,7 +236,7 @@ namespace BurgerHing.Support.Local.Services
                     ImagePath = "pack://application:,,,/Assets/Burger/premium-bacon-cheese.png",
                     Price = 13900
                 },
-            };
+            ];
         }
     }
 }

@@ -1,7 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.ComponentModel;
-
 using BurgerHing.Main.Local.Messages;
 using BurgerHing.Support.Local.Enum;
 using BurgerHing.Support.Local.Extensions;
@@ -24,6 +23,7 @@ public partial class MainWindowViewModel :
     IRecipient<RequestOrderNumberMessage>
 {
     private readonly IMenuService _menuService;
+    private readonly IDispatcherOrderService _dispatcherOrderService;
     private readonly IServiceProvider _serviceProvider;
 
     [ObservableProperty]
@@ -32,10 +32,15 @@ public partial class MainWindowViewModel :
 
     [ObservableProperty]
     private decimal _totalPrice;
+    
     [ObservableProperty]
     [NotifyCanExecuteChangedFor(nameof(OpenPayModalCommand))]
     [NotifyCanExecuteChangedFor(nameof(ClearCartCommand))]
     private decimal _totalQuantity;
+    
+    [ObservableProperty]
+    private bool _resetScrollViewer;
+
     public ObservableCollection<MenuItemInfo> DisplayMenus { get; set; } = [];
     public ObservableCollection<CartItemInfo> CartItems { get; set; } = [];
     public OrderInfo OrderInfo { get; set; } = new();
@@ -43,9 +48,11 @@ public partial class MainWindowViewModel :
 
     public MainWindowViewModel(
         IMenuService menuService,
+        IDispatcherOrderService dispatcherOrderService,
         IServiceProvider serviceProvider)
     {
         _menuService = menuService;
+        _dispatcherOrderService = dispatcherOrderService;
 
         SelectMenuCategory("Burger");
         CartItems.CollectionChanged += CartItems_CollectionChanged;
@@ -153,7 +160,11 @@ public partial class MainWindowViewModel :
         {
             if (orderStatus == OrderStatus.Completed)
             {
+                OrderInfo.OrderDate = DateTime.UtcNow;
+                _dispatcherOrderService.DispatcherOrder(OrderInfo);
+
                 CartItems.Clear();
+                DisplayMenus.Clear();
                 OrderCount++;
                 SelectMenuCategory("Burger");
             }

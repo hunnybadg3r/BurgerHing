@@ -1,8 +1,13 @@
-﻿namespace BurgerHing.Support.Local.Enum
+﻿using System.Runtime.Serialization;
+
+namespace BurgerHing.Support.Local.Enum
 {
     public enum OrderStatus
     {
-        Pending,        
-        Completed, 
+        [EnumMember(Value = "Pending")]
+        Pending,   
+        
+        [EnumMember(Value = "Completed")]
+        Completed,
     }
 }
