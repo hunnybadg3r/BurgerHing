@@ -20,7 +20,7 @@
                                 Content="Burger"
                                 EmojiText="🍔"
                                 GroupName="Menu"
-                                IsChecked="True" />
+                                IsChecked="{Binding IsBurgerCategoryChecked}" />
                             <ctrls:MenuCategoryButton
                                 Command="{Binding SelectMenuCategoryCommand}"
                                 CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}, Path=Content}"

@@ -7,7 +7,7 @@
     xmlns:views="clr-namespace:BurgerHing.Main.Controls.Views">
     <Style TargetType="{x:Type ctrls:CartBoxItem}">
         <Setter Property="Width" Value="440" />
-        <Setter Property="Height" Value="165" />
+        <Setter Property="Height" Value="160" />
         <Setter Property="BorderBrush" Value="Transparent" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="HorizontalAlignment" Value="Center" />
@@ -16,7 +16,7 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ctrls:CartBoxItem}">
                     <Border
-                        Margin="20,10,30,10"
+                        Margin="20,15,30,5"
                         BorderBrush="#d4d4d4"
                         BorderThickness="1"
                         CornerRadius="25">

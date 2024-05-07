@@ -27,6 +27,9 @@ public partial class MainWindowViewModel :
     private readonly IServiceProvider _serviceProvider;
 
     [ObservableProperty]
+    private bool _isBurgerCategoryChecked;
+
+    [ObservableProperty]
     private ViewModelBase _modalViewModel; 
     public bool IsModalOpen => ModalViewModel is not null;
 
@@ -166,6 +169,7 @@ public partial class MainWindowViewModel :
                 CartItems.Clear();
                 DisplayMenus.Clear();
                 OrderCount++;
+                IsBurgerCategoryChecked = true;
                 SelectMenuCategory("Burger");
             }
         }
