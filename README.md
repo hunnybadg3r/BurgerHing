@@ -1,4 +1,4 @@
-![](https://i.imgur.com/AaNwRAT.png)
+![](https://i.imgur.com/2hjsSSm.png)
 # BURGER HING?
 - BURGER HING은 KIOSK DEMO APP입니다. 
 - C#과 WPF를 활용하여 .NET 8을 기반으로 작성되었습니다.
@@ -13,7 +13,7 @@
 ## 구조
 MVVM + Service
 
-![](https://i.imgur.com/ygSXIDU.png)
+![](https://i.imgur.com/1GGnMMY.png)
 ## 사용된 기술
 - Dependency Injection
 - Community Toolkit MVVM
