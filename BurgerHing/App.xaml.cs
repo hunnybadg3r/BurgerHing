@@ -21,7 +21,7 @@ public partial class App : Application
             .Build();
 
         Log.Logger = new LoggerConfiguration()
-            .WriteTo.File("log-.txt", rollingInterval: RollingInterval.Day)
+            .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day)
             .CreateLogger();
 
         AppHost = Host.CreateDefaultBuilder()
@@ -40,7 +40,7 @@ public partial class App : Application
                 services.AddSingleton<IMenuService, MenuService>();
                 services.AddSingleton<IDispatcherOrderService, DispatcherJsonFileOrderService>();
 
-                // Add Logger
+                // Logger
                 services.AddSingleton(Log.Logger);
                 services.AddLogging(loggingBuilder =>
                 {

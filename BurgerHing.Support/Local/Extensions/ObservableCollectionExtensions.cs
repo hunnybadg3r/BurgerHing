@@ -40,6 +40,5 @@ namespace BurgerHing.Support.Local.Extensions
             }
         }
     }
-
 }
 

@@ -13,7 +13,7 @@ namespace BurgerHing.Support.Local.Services
         {
             try
             {
-                var folderPath = "Orders";
+                var folderPath = "orders";
                 if (!Directory.Exists(folderPath))
                 {
                     Directory.CreateDirectory(folderPath);
