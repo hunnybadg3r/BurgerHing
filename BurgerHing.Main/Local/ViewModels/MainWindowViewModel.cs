@@ -27,7 +27,7 @@ public partial class MainWindowViewModel :
     private readonly IServiceProvider _serviceProvider;
 
     [ObservableProperty]
-    private bool _isBurgerCategoryChecked;
+    private bool _isBurgerCategoryChecked = true;
 
     [ObservableProperty]
     private ViewModelBase _modalViewModel; 
