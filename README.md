@@ -22,5 +22,9 @@ MVVM + Service
 		- ObservableProperty, RelayCommand, INotifyPropertyChanged
 	- Messenger
 - WPF Custom Control
-## 실행파일 다운로드
-https://github.com/hunnybadg3r/BurgerHing/releases/download/v1/BurgerHing.zip
+
+## 다운로드
+### Portable
+https://github.com/hunnybadg3r/BurgerHing/releases/download/v1/BurgerHing-portable.zip
+### Setup (ClickOnce)
+https://github.com/hunnybadg3r/BurgerHing/releases/download/v1/BurgerHing-setup-ClickOnce.zip
