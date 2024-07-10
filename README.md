@@ -11,7 +11,7 @@
 - Custom Control 활용
 	- 확장성과 재사용성 최대화
 ## 구조
-MVVM + Service
+MVVM + Services
 
 ![](https://i.imgur.com/1GGnMMY.png)
 ## 사용된 기술
