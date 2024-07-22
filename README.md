@@ -1,6 +1,6 @@
 ![](https://i.imgur.com/2hjsSSm.png)
 # BURGER HING?
-- BURGER HING은 KIOSK DEMO APP입니다. 
+- BURGER HING은 Kiosk Demo App입니다. 
 - C#과 WPF를 활용하여 .NET 8을 기반으로 작성되었습니다.
 ## 목표
 - WPF 학습
