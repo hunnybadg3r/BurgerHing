@@ -1,4 +1,12 @@
 ![](https://i.imgur.com/2hjsSSm.png)
+
+<details>
+  <summary>더보기(gif)</summary>
+  
+  ![demo-gif](https://i.imgur.com/qaPQyg0.gif)
+
+</details>
+
 # BURGER HING?
 - BURGER HING은 Kiosk Demo App입니다. 
 - C#과 WPF를 활용하여 .NET 8을 기반으로 작성되었습니다.
